@@ -20,7 +20,7 @@ Clone the repository to your local machine.
   ```git clone https://github.com/yourusername/office-database-management.git```
 
 Setup: 
-Modify the `config.py` file to specify your MySQL database connection details.
+Modify the `main.py` file to specify your MySQL database connection details.
 
 Run the Application:
  ```python main.py```
