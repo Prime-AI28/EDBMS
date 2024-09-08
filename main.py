@@ -30,7 +30,6 @@ def Admin():
     def login():
         pas = passwd.get()
         db_pass = db_passwd.get()
-        # db_pass= Prime&2811
 
         if pas == p:
             print(db_pass)
@@ -592,7 +591,7 @@ def Admin():
 
 def Emp():
     conn = mysql.connect(
-        host="localhost", user="root", passwd="Prime&2811", database="emp_info"
+        host="localhost", user="root", passwd=db_pass, database="emp_info"
     )
     c = conn.cursor()
 
@@ -613,7 +612,7 @@ def Emp():
             import mysql.connector as mysql
 
             conn = mysql.connect(
-                host="localhost", user="root", passwd="Prime&2811", database="emp_info"
+                host="localhost", user="root", passwd=db_pass, database="emp_info"
             )
             c = conn.cursor()
             c.execute("SELECT Emp_ID,Emp_Passwd from emp_data")
@@ -627,7 +626,7 @@ def Emp():
                 conn = mysql.connect(
                     host="localhost",
                     user="root",
-                    passwd="Prime&2811",
+                    passwd=db_pass,
                     database="emp_info",
                 )
                 c = conn.cursor()
@@ -646,7 +645,7 @@ def Emp():
                     conn = mysql.connect(
                         host="localhost",
                         user="root",
-                        passwd="Prime&2811",
+                        passwd=db_pass,
                         database="emp_data",
                     )
                     c = conn.cursor()
@@ -1347,7 +1346,7 @@ def Emp():
             import mysql.connector as mysql
 
             conn = mysql.connect(
-                host="localhost", user="root", passwd="Prime&2811", database="emp_info"
+                host="localhost", user="root", passwd=db_pass, database="emp_info"
             )
             c = conn.cursor()
             c.execute("SELECT Emp_ID,Emp_Passwd from emp_data")
@@ -1361,7 +1360,7 @@ def Emp():
                 conn = mysql.connect(
                     host="localhost",
                     user="root",
-                    passwd="Prime&2811",
+                    passwd=db_pass,
                     database="emp_info",
                 )
                 c = conn.cursor()
@@ -1440,7 +1439,7 @@ def Emp():
         a = datetime.date.today()
         # print(datetime.date.today())
         conn = mysql.connect(
-            host="localhost", user="root", passwd="Prime&2811", database="emp_info"
+            host="localhost", user="root", passwd=db_pass, database="emp_info"
         )
         c = conn.cursor()
 
@@ -1449,7 +1448,7 @@ def Emp():
             import mysql.connector as mysql
 
             conn = mysql.connect(
-                host="localhost", user="root", passwd="Prime&2811", database="emp_info"
+                host="localhost", user="root", passwd=db_pass, database="emp_info"
             )
             c = conn.cursor()
             c.execute("SELECT Emp_ID,Emp_Passwd from emp_data")
@@ -1462,7 +1461,7 @@ def Emp():
                     conn = mysql.connect(
                         host="localhost",
                         user="root",
-                        passwd="Prime&2811",
+                        passwd=db_pass,
                         database="emp_info",
                     )
                     c = conn.cursor()
@@ -1478,7 +1477,7 @@ def Emp():
                     conn = mysql.connect(
                         host="localhost",
                         user="root",
-                        passwd="Prime&2811",
+                        passwd=db_pass,
                         database="emp_info",
                     )
                     d = conn.cursor()
